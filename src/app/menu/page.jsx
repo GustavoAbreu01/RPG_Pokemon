@@ -23,15 +23,8 @@ export default function MenuPage() {
             <Button className="w-full" onClick={() => router.push("/pages/profile")}>
               Perfil
             </Button>
-            <Button
-              variant="destructive"
-              className="w-full"
-              onClick={() => {
-                Cookies.remove("currentUser");
-                router.replace("/");
-              }}
-            >
-              Logout
+            <Button className="w-full" onClick={() => router.push("/pages/scheme")}>
+              Estrutura do Banco de Dados
             </Button>
           </div>
         </div>

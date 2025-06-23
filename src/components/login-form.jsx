@@ -46,6 +46,7 @@ export function LoginForm({ className, ...props }) {
 
       // e aí manda pra página de perfil
       router.push("/pages/profile");
+      window.location.reload();
     } catch (err) {
       setError(err.message || "Erro ao realizar login");
     } finally {

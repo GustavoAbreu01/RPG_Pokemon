@@ -161,12 +161,6 @@ export default function ProfilePage() {
               Pokémons derrotados: <strong>{user.totalEnemiesKills}</strong>
             </p>
           </div>
-          <Button className={"z-100"} variant="destructive" onClick={() => {
-            Cookies.remove("currentUser");
-            router.push("/");
-          }}>
-            Sair
-          </Button>
         </div>
 
         {/* Mochila */}
